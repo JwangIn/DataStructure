@@ -64,7 +64,7 @@ void Example01()
 		}
 	}
 
-std::cout<<""
+
 
 
 }
