@@ -13,33 +13,54 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\강의">
+      <UniqueIdentifier>{0a0f6de1-36c8-4ff2-bbe7-65c23e4b0260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\자료구조">
+      <UniqueIdentifier>{888748a3-a86b-4643-82f4-39ddc1a09bae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\강의">
+      <UniqueIdentifier>{ae3fb0ce-9ff3-4093-8568-509b0949489f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\자료구조">
+      <UniqueIdentifier>{da815247-ea8c-4d1c-a4c6-d60466b5f68b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="OT.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="lecture2.cpp">
+      <Filter>소스 파일\강의</Filter>
     </ClCompile>
-    <ClCompile Include="Complexity.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="lecture3.cpp">
+      <Filter>소스 파일\강의</Filter>
     </ClCompile>
     <ClCompile Include="LinkedList.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\자료구조</Filter>
     </ClCompile>
-    <ClCompile Include="lecture2.cpp">
+    <ClCompile Include="Complexity.cpp">
+      <Filter>소스 파일\자료구조</Filter>
+    </ClCompile>
+    <ClCompile Include="OT.cpp">
+      <Filter>소스 파일\자료구조</Filter>
+    </ClCompile>
+    <ClCompile Include="DoublilyLinkedList.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Complexity.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="lectures.h">
+      <Filter>헤더 파일\강의</Filter>
     </ClInclude>
     <ClInclude Include="LinkedList.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\자료구조</Filter>
     </ClInclude>
-    <ClInclude Include="lectures.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Complexity.h">
+      <Filter>헤더 파일\자료구조</Filter>
+    </ClInclude>
+    <ClInclude Include="DoublilyLinkedList.h">
+      <Filter>헤더 파일\자료구조</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

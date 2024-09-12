@@ -128,13 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Complexity.cpp" />
+    <ClCompile Include="DoublilyLinkedList.cpp" />
     <ClCompile Include="lecture2.cpp" />
+    <ClCompile Include="lecture3.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OT.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Complexity.h" />
+    <ClInclude Include="DoublilyLinkedList.h" />
     <ClInclude Include="lectures.h" />
     <ClInclude Include="LinkedList.h" />
   </ItemGroup>
