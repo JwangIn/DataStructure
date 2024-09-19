@@ -51,6 +51,9 @@
     <ClCompile Include="lecture4.cpp">
       <Filter>소스 파일\강의</Filter>
     </ClCompile>
+    <ClCompile Include="lecture5.cpp">
+      <Filter>소스 파일\강의</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lectures.h">
@@ -67,6 +70,12 @@
     </ClInclude>
     <ClInclude Include="CircularLinkedList.h">
       <Filter>헤더 파일\자료구조</Filter>
+    </ClInclude>
+    <ClInclude Include="MyVector.h">
+      <Filter>헤더 파일\자료구조</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomNumber.h">
+      <Filter>헤더 파일\강의</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
