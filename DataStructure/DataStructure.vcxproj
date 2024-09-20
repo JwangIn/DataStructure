@@ -133,6 +133,7 @@
     <ClCompile Include="lecture2.cpp" />
     <ClCompile Include="lecture3.cpp" />
     <ClCompile Include="lecture5.cpp" />
+    <ClCompile Include="lecture6.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OT.cpp" />
@@ -141,6 +142,7 @@
     <ClInclude Include="CircularLinkedList.h" />
     <ClInclude Include="Complexity.h" />
     <ClInclude Include="DoublilyLinkedList.h" />
+    <ClInclude Include="GameRoom.h" />
     <ClInclude Include="lectures.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="MyVector.h" />
