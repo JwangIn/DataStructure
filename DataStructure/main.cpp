@@ -4,6 +4,8 @@
 #include "Complexity.h"
 #include "LinkedList.h"
 #include "GameRoom.h"
+#include "MyStack.h"
+#include "GameHistory.h"
 
 int main()
 {
@@ -17,6 +19,7 @@ int main()
 	//lecture5();
 	//lecture6();
 
-	IGameRoomExample();
-
+	//IGameRoomExample();
+	//StackExample();
+	iGameHistory();
 }
