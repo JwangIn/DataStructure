@@ -135,7 +135,7 @@ string ChangePostFix(string target)
 			
 			while (stack.top() != '(')
 			{
-				prefix += target[i]; // 연산자는 결과에 따라 추가한다.
+				prefix += stack.top(); // 연산자는 결과에 따라 추가한다. <- 스택에서 출력해야 하기 때문에 stack.top으로 변경
 				stack.pop();
 			}
 			stack.pop(); // '(' 괄호를 pop해서 스택에서 없앤다.
@@ -144,7 +144,7 @@ string ChangePostFix(string target)
 		{
 			while (!stack.empty() && priority(stack.top())>= priority(target[i])) // 규칙2또는 규칙3이 아닐 때
 			{
-				prefix += target[i];
+				prefix += stack.top();
 				stack.pop();
 			}
 			
@@ -180,7 +180,7 @@ int calcPostFix(string target)
 		if (isdigit(target[i]))
 		{
 			int curNum = target[i] - '0';
-			s.push(target[i]); // char 데이터를 int 데이터로 
+			s.push(curNum); // char 데이터를 int 데이터로 
 		}
 		else // 연산자 일 때
 		{
