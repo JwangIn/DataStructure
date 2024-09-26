@@ -140,6 +140,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CircularLinkedList.h" />
+    <ClInclude Include="CommandSystem.h" />
     <ClInclude Include="Complexity.h" />
     <ClInclude Include="DoublilyLinkedList.h" />
     <ClInclude Include="GameHistory.h" />
