@@ -8,6 +8,8 @@
 #include "GameHistory.h"
 #include "MyQueue.h"
 #include "CommandSystem.h"
+#include "MyDeque.h"
+#include "Iterator.h"
 
 int main()
 {
@@ -25,5 +27,7 @@ int main()
 	//StackExample();
 	//iGameHistory();
 	//iQueueExample();
-	CommandSystemExample();
+	//CommandSystemExample();
+	//IDequeExample();
+	IteratorExample();
 }

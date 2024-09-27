@@ -98,5 +98,11 @@
     <ClInclude Include="CommandSystem.h">
       <Filter>헤더 파일\예제</Filter>
     </ClInclude>
+    <ClInclude Include="MyDeque.h">
+      <Filter>헤더 파일\자료구조</Filter>
+    </ClInclude>
+    <ClInclude Include="Iterator.h">
+      <Filter>헤더 파일\자료구조</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
