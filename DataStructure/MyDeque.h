@@ -35,12 +35,12 @@ private:
 
 	void allocateBlock() // 블록 생성 함수
 	{
-		blocks.push_back(new T(blockSize)); // new T(blockSize) -> vector<T*>blocks에 push back
+		blocks.push_back(new T[blockSize]); // new T(blockSize) -> vector<T*>blocks에 push back
 	}
 
 	void addFrontBlock() // 앞쪽 블럭 추가
 	{
-		blocks.insert(blocks.begin(), new T(blockSize));
+		blocks.insert(blocks.begin(), new T[blockSize]);
 		frontIndex = blockSize - 1;
 	}
 	void addBackBlock() // 뒤쪽 블럭 추가
@@ -74,7 +74,7 @@ public:
 		{
 			throw std::out_of_range("덱이 비었습니다.");
 		}
-		return blocks[0][frontIndex + 1];
+		return blocks[0][frontIndex ];
 	}
 	T& getBack() const
 	{
@@ -82,27 +82,29 @@ public:
 		{
 			throw std::out_of_range("덱이 비었습니다.");
 		}
-		return blocks.back()[backIndex - 1];
+		return blocks.back()[backIndex ];
 	}
 	// Main Method
 
 	void push_front(const T& data)// int, float, std::string
 	{
+		frontIndex--;
 		if (frontIndex < 0) // ? 
 		{
 			addFrontBlock();
 		}
-		blocks[0][frontIndex--] = data;
+		blocks[0][frontIndex] = data;
 		iCount++;
 	}
 
 	void pushBack(const T& data)
 	{
+		backIndex++;
 		if (backIndex == blockSize)
 		{
 			addBackBlock();
 		}
-		blocks.back()[backIndex++] = data;
+		blocks.back()[backIndex] = data;
 		iCount++;
 	}
 	void popFront()

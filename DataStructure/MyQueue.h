@@ -25,6 +25,52 @@ private:
 	int front; // 출력위치를 가리키는 인덱스
 	int rear; // 데이터 입력 위치를 가리키는 인덱스
 	int iCount; // 현재 자룍조의 원소의 갯수
+
+	class Iterator
+	{
+	private:
+		T* ptr;
+	public:
+		Iterator() :ptr(nullptr) {}
+		Iterator(T* ptr) :ptr(ptr) {}
+
+		T& operator*()
+		{
+			return *ptr;
+		}
+		// 전위 연산자 ++it
+		Iterator& operator++()
+		{
+			ptr++;
+			return *this;
+		}
+		// 후위 연산자 it++
+		Iterator& operator++(int)
+		{
+			iterator temp = *this;
+			ptr++;
+			return temp;
+		}
+		bool operator==(const Iterator& other)
+		{
+			return ptr == other.ptr; // ? true : false 생략해도된다.
+		}
+		bool operator!=(const Iterator& other)
+		{
+			return ptr != other.ptr; // ? true : false 생략해도된다.
+		}
+		Iterator operator+(const int count)
+		{
+			Iterator temp = *this;
+			temp.ptr += count;
+			return temp;
+		}
+
+	};
+public:
+	using iterator = Iterator;
+	iterator begin() { return iterator(queue); }
+	iterator end() { return begin() + iCount; }
 public:
 	//생성자
 	ArrayBasedQueue(int size = 10)
@@ -196,6 +242,19 @@ void iQueueExample()
 	mque.Push(2);
 	mque.Push(3);
 
+	ArrayBasedQueue<int>::iterator queueIt = mque.begin();
+
+	for (queueIt; queueIt != mque.end(); queueIt++)
+	{
+		std::cout << "Iterator 사용 : " << *queueIt << std::endl;
+	}
+
+	for (int elem : mque)
+	{
+		std::cout << "Iterator 범위 : " << elem << std::endl;
+	}
+
+
 	std::cout << mque.Front() << std::endl;
 	mque.Pop();
 	std::cout << mque.Front() << std::endl;
@@ -216,6 +275,8 @@ void iQueueExample()
 	lque.Pop();
 	std::cout << lque.Front() << std::endl;
 	lque.Pop();
+
+
 }
 
 // 선형 큐의 단점 : front, rear가 계속 증가하고, 재활용이 힘들다.

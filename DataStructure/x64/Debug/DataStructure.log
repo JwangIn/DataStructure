@@ -2,4 +2,7 @@
 C:\Users\Administrator\Desktop\DataStructure\DataStructure\GameRoom.h(91,9): warning C4804: '<=': 연산에 'bool' 형식을 사용하는 것은 안전하지 않습니다.
   (소스 파일 'main.cpp'을(를) 컴파일하는 중)
   
+C:\Users\Administrator\Desktop\DataStructure\DataStructure\MyQueue.h(52): warning C4172: 지역 변수 또는 임시: temp의 주소를 반환하고 있습니다.
+C:\Users\Administrator\Desktop\DataStructure\DataStructure\Iterator.h(62): warning C4172: 지역 변수 또는 임시: temp의 주소를 반환하고 있습니다.
+C:\Users\Administrator\Desktop\DataStructure\DataStructure\Iterator.h(62): warning C4172: 지역 변수 또는 임시: temp의 주소를 반환하고 있습니다.
   DataStructure.vcxproj -> C:\Users\Administrator\Desktop\DataStructure\DataStructure\x64\Debug\DataStructure.exe
