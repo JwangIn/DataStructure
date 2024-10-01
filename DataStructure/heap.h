@@ -37,11 +37,18 @@
 class PriorityQueue
 {
 private:
-	std::vector<int> p_queue;
-
+	std::vector<int> heap;
+		
 	void heapifyUp(int idx) // 마지막에 들어온 idx
 	{
-				
+		// 비교하는 코드를 작성해보세요. 새로들어온 노드, 그 노드의 부모
+
+		while (heap[idx] > heap[(idx - 1) / 2])
+		{
+			std::swap(heap[idx], heap[(idx - 1) / 2]);
+			idx = (idx - 1) / 2;
+		}
+
 	}
 
 	// 마지막 원소 : size -1 -> root
@@ -51,11 +58,79 @@ private:
 
 	void heapifyDown(int idx)
 	{
+		int size = heap.size();
+		while (true)
+		{
+			int largest = idx;
+			int left = idx * 2 + 1;
+			int right = idx * 2 + 2;
+
+			if (left<size && heap[largest] < heap[left])
+				largest = left;
+
+			if (right<size && heap[largest] < heap[right])
+				largest = right;
+
+			if (largest == idx)
+				break;
+
+			std::swap(heap[largest], heap[idx]);
+			idx = largest;
+
+		}
 
 	}
 
 
 public:
+	void push(int _data)
+	{
+		heap.push_back(_data);
+		heapifyUp(heap.size()-1);
+	}
 
+	int pop()
+	{
+		if (heap.empty())
+		{
+			throw std::out_of_range("힙이 비어있습니다.");
+		}
+
+		int root = heap[0];	// 1. 가장 큰 수를 root에 저장한다.
+		heap[0] = heap.back(); // 3. 비어있는 root. 가장 마지막 원소를 대입한다.
+		heap.pop_back(); // 4. 가장 마지막 데이터의 공간이 비었다.
+		heapifyDown(0); // 5. 힙의 특성에 맞게 재정렬
+		return root; // 2. 리턴 시킨다.(최대값을 출력했다.)
+	}
+
+	int top() const
+	{
+		if (heap.empty())
+		{
+			throw std::out_of_range("힙이 비어있습니다.");
+		}
+		return heap[0];
+	}
+
+	bool empty() const { return heap.empty(); }
+
+	int size() const { return heap.size(); }
 
 };
+
+
+void PriortyQueueExample()
+{
+	PriorityQueue p_q;
+	p_q.push(1);
+	p_q.push(3);
+	p_q.push(5);
+	p_q.push(7);
+	p_q.push(9);
+
+	while (!p_q.empty())
+	{
+		std::cout << "우선 순위 결과 : " << p_q.pop() << std::endl;
+	}
+
+}
