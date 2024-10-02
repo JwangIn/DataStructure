@@ -11,6 +11,7 @@
 #include "MyDeque.h"
 #include "Iterator.h"
 #include "heap.h"
+#include "Tree.h"
 
 int main()
 {
@@ -23,7 +24,7 @@ int main()
 	//lecture4();
 	//lecture5();
 	//lecture6();
-	lecture7();
+	//lecture7();
 
 	//IGameRoomExample();
 	//StackExample();
@@ -33,4 +34,5 @@ int main()
 	//IDequeExample();
 	//IteratorExample();
 	//PriortyQueueExample();
+	TreeExample();
 }
