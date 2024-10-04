@@ -95,15 +95,15 @@ public:
 // insert
 // delete
 
-// 삭제의 방법
+// 균형 잡힌 이진 검색 트리
+// Red - Black Tree, AVL Tree
 
-// 1. 삭제하고자 하는 노드의 자식이 없을 때
- 
-// 2. 삭제하고자 하는 노드에 왼쪽에만 자식이 있을 때
- 
-// 3. 삭제하고자 하는 노드의 오른쪽에만 자식이 있을 때
- 
-// 4. 양쪽에 자식이 있을때
+// 1. 모든 노드는 빨간색 혹은 검은색이다.
+// 2. 루트 노드는 검은색이다.
+// 3. NIL(Null leaf) 리프 노드들은 검은색이다. Null left : 자료를 갖지 않고 트리의 끝을 나타내는 도ㅡ
+// 4. 빨간색 노드의 자식은 검은색이다. (No Double Red) // 검은색의 자식이 검은색이여도 된다.
+// 5. 모든 리프 노드에서 Black Depth는 같다. // 모든 리프 노드에서 특정 노드로 가는 검은색 노드의 갯수가 같아야한다.
+
 
 class BinarySearchTree
 {
@@ -131,7 +131,7 @@ private:
 
 		if (value > root->data)
 		{
-			root->right = insert(root->right, value);
+			root->right = insert(root->right, value); 
 		}
 
 		return root;
@@ -153,6 +153,65 @@ private:
 			return search(root->right, target);
 		}
 	}
+	// 노드의 삭제
+
+	// 1. 리프 노드 또는 자식이 1개만 있을 경우 : 노드를 삭제하고 자식 노드를 부모 노드와 연결 시켜준다.
+
+	// 2. 자식이 2개가 있을 경우 : case1, case2
+
+	Node* removeNode(Node* node, int target)
+	{
+		if (node == nullptr)return node;
+		// 1. 삭제할 노드를 찾는다.
+		// 그 노드의 자식이 1개만 존재하거나, 리프 노드일 경우
+		if (target < node->data)
+		{
+			node->left = removeNode(node->left, target);
+		}
+		else if (target > node->data)
+		{
+			node->right = removeNode(node->right, target);
+		}
+		else // 2. 노드를 찾았다면 
+		{
+			// 그 노드의 자식이 1개만 존재하거나, 리프 노드일 경우
+
+			if (node->left == nullptr)
+			{
+				Node* temp = node->right;
+				delete node;
+				return temp;
+			}
+			else if (node->right == nullptr)
+			{
+				Node* temp = node->left;
+				delete node;
+				return temp;
+			}
+
+			// 자식이 2개가 존재할 경우
+			// 왼쪽 노드를 부모로 올릴지, 오른쪽 노드를 부모를 올릴지 선택해야한다.
+			// 오른쪽을 선택한다고 가정하고 오른쪽 노드 중에서 가장 왼쪽 아래에 있는 노드를 부모로 변경해준다.
+
+			Node* temp = minValueNode(node->right);
+
+			node->data = temp->data;
+			node->right = removeNode(node->right, temp->data);
+		}
+		
+		return node;
+		
+	}
+	Node* minValueNode(Node* node)
+	{
+		Node* current = node;
+		while (current && current->left != nullptr)
+		{
+			current = current->left;
+		}
+		return current;
+	}
+
 	void inOrder(Node* root)
 	{
 		if (root == nullptr)return;
@@ -161,6 +220,8 @@ private:
 		std::cout << root->data << " ";
 		inOrder(root->right);
 	}
+	
+
 public:
 	BinarySearchTree():root(nullptr){}
 
@@ -174,11 +235,48 @@ public:
 		return search(root, value) != nullptr;
 	}
 
+	void remove(int target)
+	{
+		 removeNode(root , target);
+
+	}
+	
 	void InOrder()
 	{
 		inOrder(root);
 		std::cout << std::endl;
 	}
+	void leftRotate(Node* oldTop)
+	{
+		bool isRoot = false;
+		if (oldTop->data == root->data)
+			isRoot = true;
+
+		Node* newTop = oldTop->right;
+		oldTop->right = newTop->left;
+		newTop->left = oldTop;
+
+		if (isRoot)
+			root = newTop;
+
+	}
+	void rightRotate(Node* oldTop)
+	{
+		bool isRoot = false;
+		if (oldTop->data == root->data)
+			isRoot = true;
+
+		Node* newTop = oldTop->left;
+		oldTop->left = newTop->right;
+		newTop->right = oldTop;
+
+		if (isRoot)
+			root = newTop;
+
+
+	}
+
+	Node* GetRoot() { return root; }
 };
 
 void TreeExample()
@@ -213,6 +311,13 @@ void TreeExample()
 	bst.insert(25);
 	bst.insert(8);
 	bst.insert(49);
+	bst.insert(40);
+	bst.insert(17);
+
+	bst.remove(25);
+	bst.remove(26);
+
+	bst.rightRotate(bst.GetRoot());
 
 	bst.InOrder();
 

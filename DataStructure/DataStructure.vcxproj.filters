@@ -113,5 +113,8 @@
     <ClInclude Include="Tree.h">
       <Filter>헤더 파일\자료구조</Filter>
     </ClInclude>
+    <ClInclude Include="Set.h">
+      <Filter>헤더 파일\자료구조</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
