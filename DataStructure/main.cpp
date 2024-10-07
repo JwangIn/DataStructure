@@ -13,6 +13,8 @@
 #include "heap.h"
 #include "Tree.h"
 #include "Set.h"
+#include "MyMap.h"
+#include "HashTable.h"
 
 int main()
 {
@@ -37,4 +39,6 @@ int main()
 	//PriortyQueueExample();
 	//TreeExample();
 	SetExample();
+	//MapExample();
+	//HashExample();
 }

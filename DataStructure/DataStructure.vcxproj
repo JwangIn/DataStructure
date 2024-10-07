@@ -146,11 +146,13 @@
     <ClInclude Include="DoublilyLinkedList.h" />
     <ClInclude Include="GameHistory.h" />
     <ClInclude Include="GameRoom.h" />
+    <ClInclude Include="HashTable.h" />
     <ClInclude Include="heap.h" />
     <ClInclude Include="Iterator.h" />
     <ClInclude Include="lectures.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="MyDeque.h" />
+    <ClInclude Include="MyMap.h" />
     <ClInclude Include="MyQueue.h" />
     <ClInclude Include="MyStack.h" />
     <ClInclude Include="MyVector.h" />

@@ -1,37 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\MyQueue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|solutionrelative:MyQueue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\Set.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|solutionrelative:Set.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\GameRoom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|solutionrelative:GameRoom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\lecture6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\HashTable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|solutionrelative:HashTable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\MyMap.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|solutionrelative:MyMap.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\MyQueue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|solutionrelative:MyQueue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\GameRoom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|solutionrelative:GameRoom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\lecture6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|solutionrelative:lecture6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\lectures.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\lectures.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|solutionrelative:lectures.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\MyVector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\MyVector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|solutionrelative:MyVector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\lecture5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\lecture5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|solutionrelative:lecture5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\RandomNumber.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\RandomNumber.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{88FF402E-A5E3-4AC3-A706-E53559E72CA0}|DataStructure.vcxproj|solutionrelative:RandomNumber.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
@@ -45,54 +57,119 @@
       "DocumentGroups": [
         {
           "DockedWidth": 238,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{08a1bf1d-7967-4afc-8253-1790862ab8c9}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GameRoom.h",
-              "DocumentMoniker": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\GameRoom.h",
-              "RelativeDocumentMoniker": "GameRoom.h",
-              "ToolTip": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\GameRoom.h",
-              "RelativeToolTip": "GameRoom.h",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAQwFoAAAAIAAAA",
+              "DocumentIndex": 2,
+              "Title": "HashTable.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\HashTable.h",
+              "RelativeDocumentMoniker": "HashTable.h",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\HashTable.h",
+              "RelativeToolTip": "HashTable.h",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAIwBMAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-25T17:41:56.967Z",
+              "WhenOpened": "2024-10-07T08:13:58.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyMap.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\MyMap.h",
+              "RelativeDocumentMoniker": "MyMap.h",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\MyMap.h",
+              "RelativeToolTip": "MyMap.h",
+              "ViewState": "AQIAAB4AAAAAAAAAAIAwwEwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-07T07:24:58.368Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Set.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\Set.h",
+              "RelativeDocumentMoniker": "Set.h",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\Set.h",
+              "RelativeToolTip": "Set.h",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAwwFEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-07T07:04:21.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameRoom.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\GameRoom.h",
+              "RelativeDocumentMoniker": "GameRoom.h",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\GameRoom.h",
+              "RelativeToolTip": "GameRoom.h",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAQwFoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-25T17:41:56.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MyQueue.h",
-              "DocumentMoniker": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\MyQueue.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\MyQueue.h",
               "RelativeDocumentMoniker": "MyQueue.h",
-              "ToolTip": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\MyQueue.h",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\MyQueue.h",
               "RelativeToolTip": "MyQueue.h",
-              "ViewState": "AQIAAL4AAAAAAAAAAAAQwMwAAAAOAAAA",
+              "ViewState": "AQIAAKAAAAAAAAAAAAAQwMwAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-25T16:43:38.748Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "lecture6.cpp",
-              "DocumentMoniker": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\lecture6.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\lecture6.cpp",
               "RelativeDocumentMoniker": "lecture6.cpp",
-              "ToolTip": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\lecture6.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\lecture6.cpp",
               "RelativeToolTip": "lecture6.cpp",
               "ViewState": "AQIAAKIAAAAAAAAAAAAAALUAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-25T16:37:58.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T16:37:58.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "RandomNumber.h",
-              "DocumentMoniker": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\RandomNumber.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\RandomNumber.h",
               "RelativeDocumentMoniker": "RandomNumber.h",
-              "ToolTip": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\RandomNumber.h",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\RandomNumber.h",
               "RelativeToolTip": "RandomNumber.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -100,11 +177,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "MyVector.h",
-              "DocumentMoniker": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\MyVector.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\MyVector.h",
               "RelativeDocumentMoniker": "MyVector.h",
-              "ToolTip": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\MyVector.h",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\MyVector.h",
               "RelativeToolTip": "MyVector.h",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAAFoAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -112,11 +189,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "lecture5.cpp",
-              "DocumentMoniker": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\lecture5.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\lecture5.cpp",
               "RelativeDocumentMoniker": "lecture5.cpp",
-              "ToolTip": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\lecture5.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\lecture5.cpp",
               "RelativeToolTip": "lecture5.cpp",
               "ViewState": "AQIAABsAAAAAAAAAAAAAACQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -124,36 +201,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\main.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAARAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACoAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-25T16:37:58.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "deque",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\deque",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\deque",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\deque",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\deque",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\deque",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\deque",
               "ViewState": "AQIAAD8EAAAAAAAAAAAmwE4EAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-09-25T16:37:58.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "lectures.h",
-              "DocumentMoniker": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\lectures.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\lectures.h",
               "RelativeDocumentMoniker": "lectures.h",
-              "ToolTip": "C:\\Users\\trund\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\DataStructure\\DataStructure\\lectures.h",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DataStructure\\DataStructure\\lectures.h",
               "RelativeToolTip": "lectures.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
