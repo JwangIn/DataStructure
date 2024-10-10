@@ -62,6 +62,24 @@ class Garph_List
 private:
 	int Vertex; // 정점의 수
 	std::vector<std::vector<int>> adjList;
+	std::set<int> seen; // 출력한 노드들을 저장할 자료구조
+
+	void recur_DFS(int index) // 0번 검색
+	{
+		std::cout << index << " ";	// 시작 데이터를 출력
+		seen.insert(index); // 0번 seen 삽입
+		vector<int>& keys = adjList[index]; // 시작 vertex의 인접 vertex를 찾는다. 1, 0보다 크면 있다.
+
+		for (int key : keys)
+		{
+			if (seen.find(key) == seen.end()) // seen에 없는 데이터라면 실행, seen.key 검색 없는게 true 실행
+			{
+				recur_DFS(key);
+			}
+		}
+		
+	}
+
 public:
 	Garph_List(int vertices) : Vertex(vertices) 
 	{
@@ -73,6 +91,87 @@ public:
 		adjList[v1].push_back(v2);
 		adjList[v2].push_back(v1);
 	}
+
+	bool RecurDFS() // Graph DFS 사용해서 모든 경로가 연결되어 있는지 파악하는 함수
+	{
+		seen.clear();
+		recur_DFS(0);
+
+		// seen vertex, adjList.size
+		if(seen.size()==adjList.size())
+			std::cout << "모든 경로가 연결되어 있습니다." << std::endl;
+		else
+			std::cout << "모든 경로가 연결되어 있지 않습니다." << std::endl;
+
+		return seen.size() == adjList.size();
+	}
+
+	void IterDFS(int index) // for(it = begin(), !=end().it++)
+	{
+		seen.clear();
+
+		std::stack<int> s; // 인접한 vertex 저장 -> 인접한 vertex
+		s.push(index);
+		
+		while (!s.empty())
+		{
+			int vertex = s.top();
+			s.pop();
+
+			if (seen.find(vertex) == seen.end()) // 중복을 막는다
+			{
+				std::cout << vertex << " ";
+				seen.insert(vertex);
+
+				for (auto it = adjList[vertex].rbegin(); it != adjList[vertex].rend(); it++)
+				{
+					if(seen.find(*it)==seen.end())
+						s.push(*it);
+				}
+			}
+			
+		}
+		if(seen.size()==adjList.size())
+			std::cout << "모든 경로가 연결되어 있습니다." << std::endl;
+		else
+			std::cout << "모든 경로가 연결되어 있지 않습니다." << std::endl;
+
+		
+	}
+	void IterBFS(int index) // for(it = begin(), !=end().it++)
+	{
+		seen.clear();
+
+		std::queue<int> s; // 인접한 vertex 저장 -> 인접한 vertex
+		s.push(index);
+
+		while (!s.empty())
+		{
+			int vertex = s.front();
+			s.pop();
+
+			if (seen.find(vertex) == seen.end()) // 중복을 막는다
+			{
+				std::cout << vertex << " ";
+				seen.insert(vertex);
+
+				for (auto it = adjList[vertex].begin(); it != adjList[vertex].end(); it++)
+				{
+					if (seen.find(*it) == seen.end())
+						s.push(*it);
+				}
+			}
+
+		}
+		if (seen.size() == adjList.size())
+			std::cout << "모든 경로가 연결되어 있습니다." << std::endl;
+		else
+			std::cout << "모든 경로가 연결되어 있지 않습니다." << std::endl;
+
+
+	}
+
+
 	void printGraphList()
 	{
 		for (int i = 0; i < Vertex; i++)
@@ -92,14 +191,25 @@ public:
 
 void GraphExample()
 {
-	Garph_List graph_L(5);
-	graph_L.addEdgeList(0, 2);
-	graph_L.addEdgeList(0, 3);
-	graph_L.addEdgeList(1, 3);
+	Garph_List graph_L(7);
+	// graph_L.addEdgeList(0, 2);
+	// graph_L.addEdgeList(0, 3);
+	// graph_L.addEdgeList(1, 3);
+	// graph_L.addEdgeList(1, 4);
+	// graph_L.addEdgeList(2, 4);
+
+	graph_L.addEdgeList(0, 1);
 	graph_L.addEdgeList(1, 4);
+	graph_L.addEdgeList(4, 6);
+	graph_L.addEdgeList(0, 2);
 	graph_L.addEdgeList(2, 4);
+	graph_L.addEdgeList(2, 5);
+	graph_L.addEdgeList(0, 3);
 
 	graph_L.printGraphList();
+	graph_L.RecurDFS();
+	graph_L.IterDFS(0);
+	graph_L.IterBFS(0);
 
 	std::cout << "Graph Matrix" << std::endl;
 
@@ -111,6 +221,12 @@ void GraphExample()
 	graph_M.addEfgeMatrix(2, 4);
 
 	graph_M.printGraphMatrix();
+
+	// vector<vector<int>> example
+	// {
+	// 	{0,1},{0,2},{0,3},
+	// 	{1,4}
+	// }
 
 	
 }
@@ -131,7 +247,7 @@ private:
 	set<int> seen; // 탐색한 방을 저장하는 자료구조
 
 	// 재귀 방식
-	void recurDFS()
+	void recurDFS(std::vector<std::vector<int>> rooms)
 	{
 		// stack : 인접한 vertex 대입, seen 넣고, 출력
 
